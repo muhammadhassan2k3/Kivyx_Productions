@@ -33,6 +33,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-Kivyx_Productions-Kivyx_ProductionsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Kivyx_Productions-Kivyx_ProductionsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A66882256FFB45C2B607056C /* Kanit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95BA20FF89184CA4B45CC544 /* Kanit.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-Kivyx_Productions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kivyx_Productions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Kivyx_Productions/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Kivyx_Productions-Kivyx_ProductionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kivyx_Productions-Kivyx_ProductionsTests.release.xcconfig"; path = "Target Support Files/Pods-Kivyx_Productions-Kivyx_ProductionsTests/Pods-Kivyx_Productions-Kivyx_ProductionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		95BA20FF89184CA4B45CC544 /* Kanit.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Kanit.ttf; path = ../assets/fonts/Kanit.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		32C69039E59945C6A5EC0124 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95BA20FF89184CA4B45CC544 /* Kanit.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +198,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				32C69039E59945C6A5EC0124 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -329,6 +340,7 @@
 				0EA211572AF7630F00F7005F /* FontAwesome6_Solid.ttf in Resources */,
 				0EA2114B2AF7630F00F7005F /* FontAwesome6_Regular.ttf in Resources */,
 				0EA2115A2AF7630F00F7005F /* MaterialIcons.ttf in Resources */,
+				A66882256FFB45C2B607056C /* Kanit.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +697,10 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
@@ -755,7 +770,10 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

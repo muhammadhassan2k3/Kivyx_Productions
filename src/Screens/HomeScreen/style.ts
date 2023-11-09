@@ -24,8 +24,8 @@ const styles = (theme: Theme) =>
     headerText: {
       color: theme.colors.SEARCHBAR,
       fontSize: 40,
-      fontWeight: 'bold',
       marginLeft: 2,
+      fontFamily: 'Kanit',
     },
     iconContainer: {
       alignSelf: 'center',
