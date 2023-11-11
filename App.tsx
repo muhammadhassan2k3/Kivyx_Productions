@@ -5,6 +5,8 @@ import HomeScreen from './src/Screens/HomeScreen';
 import SearchScreen from './src/Screens/SearchScreen';
 import ThemeProvider from './src/Theming/themeProvider';
 import SplashScreen from 'react-native-splash-screen';
+import LoginScreen from './src/Screens/LoginScreen';
+import SignupScreen from './src/Screens/SignupScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,7 +18,9 @@ const App = () => {
   return (
     <ThemeProvider>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Navigator>
+          <Stack.Screen name="LogIn" component={LoginScreen} />
+          <Stack.Screen name="Signup" component={SignupScreen} />
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Search" component={SearchScreen} />
         </Stack.Navigator>
