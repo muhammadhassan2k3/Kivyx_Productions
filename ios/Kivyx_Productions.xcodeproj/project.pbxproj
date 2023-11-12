@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* Kivyx_ProductionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Kivyx_ProductionsTests.m */; };
-		03AE746FFE5BF4E4D01BFE1A /* Pods_Kivyx_Productions_Kivyx_ProductionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8610B4E7C5D1397585B465 /* Pods_Kivyx_Productions_Kivyx_ProductionsTests.framework */; };
-		0E85DE0F2AFE9F35000813EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E85DE0E2AFE9F34000813EB /* GoogleService-Info.plist */; };
 		0EA211482AF7630F00F7005F /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA211352AF7630F00F7005F /* Fontisto.ttf */; };
 		0EA211492AF7630F00F7005F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA211362AF7630F00F7005F /* Octicons.ttf */; };
 		0EA2114A2AF7630F00F7005F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA211372AF7630F00F7005F /* Feather.ttf */; };
@@ -32,8 +30,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		331782AC592A858F7690B09D /* Pods_Kivyx_Productions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A3802F110D526D09008180 /* Pods_Kivyx_Productions.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9178BB64B491FE6C830E13EC /* libPods-Kivyx_Productions-Kivyx_ProductionsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4E54D7041A3FDD9985DC16 /* libPods-Kivyx_Productions-Kivyx_ProductionsTests.a */; };
+		972E0AD595F84C91BEFA5094 /* libPods-Kivyx_Productions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6DC0667A74C384ED690B76 /* libPods-Kivyx_Productions.a */; };
 		A66882256FFB45C2B607056C /* Kanit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95BA20FF89184CA4B45CC544 /* Kanit.ttf */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		00E356EE1AD99517003FC87E /* Kivyx_ProductionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kivyx_ProductionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* Kivyx_ProductionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kivyx_ProductionsTests.m; sourceTree = "<group>"; };
-		0E85DE0E2AFE9F34000813EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0EA211352AF7630F00F7005F /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		0EA211362AF7630F00F7005F /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		0EA211372AF7630F00F7005F /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
@@ -77,14 +75,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Kivyx_Productions/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Kivyx_Productions/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Kivyx_Productions/main.m; sourceTree = "<group>"; };
-		20A3802F110D526D09008180 /* Pods_Kivyx_Productions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kivyx_Productions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-Kivyx_Productions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kivyx_Productions.debug.xcconfig"; path = "Target Support Files/Pods-Kivyx_Productions/Pods-Kivyx_Productions.debug.xcconfig"; sourceTree = "<group>"; };
+		4A4E54D7041A3FDD9985DC16 /* libPods-Kivyx_Productions-Kivyx_ProductionsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kivyx_Productions-Kivyx_ProductionsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5709B34CF0A7D63546082F79 /* Pods-Kivyx_Productions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kivyx_Productions.release.xcconfig"; path = "Target Support Files/Pods-Kivyx_Productions/Pods-Kivyx_Productions.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Kivyx_Productions-Kivyx_ProductionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kivyx_Productions-Kivyx_ProductionsTests.debug.xcconfig"; path = "Target Support Files/Pods-Kivyx_Productions-Kivyx_ProductionsTests/Pods-Kivyx_Productions-Kivyx_ProductionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F6DC0667A74C384ED690B76 /* libPods-Kivyx_Productions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kivyx_Productions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Kivyx_Productions/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Kivyx_Productions-Kivyx_ProductionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kivyx_Productions-Kivyx_ProductionsTests.release.xcconfig"; path = "Target Support Files/Pods-Kivyx_Productions-Kivyx_ProductionsTests/Pods-Kivyx_Productions-Kivyx_ProductionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		95BA20FF89184CA4B45CC544 /* Kanit.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Kanit.ttf; path = ../assets/fonts/Kanit.ttf; sourceTree = "<group>"; };
-		CE8610B4E7C5D1397585B465 /* Pods_Kivyx_Productions_Kivyx_ProductionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kivyx_Productions_Kivyx_ProductionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -93,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03AE746FFE5BF4E4D01BFE1A /* Pods_Kivyx_Productions_Kivyx_ProductionsTests.framework in Frameworks */,
+				9178BB64B491FE6C830E13EC /* libPods-Kivyx_Productions-Kivyx_ProductionsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				331782AC592A858F7690B09D /* Pods_Kivyx_Productions.framework in Frameworks */,
+				972E0AD595F84C91BEFA5094 /* libPods-Kivyx_Productions.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,8 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				20A3802F110D526D09008180 /* Pods_Kivyx_Productions.framework */,
-				CE8610B4E7C5D1397585B465 /* Pods_Kivyx_Productions_Kivyx_ProductionsTests.framework */,
+				6F6DC0667A74C384ED690B76 /* libPods-Kivyx_Productions.a */,
+				4A4E54D7041A3FDD9985DC16 /* libPods-Kivyx_Productions-Kivyx_ProductionsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,7 +192,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				0E85DE0E2AFE9F34000813EB /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* Kivyx_Productions */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* Kivyx_ProductionsTests */,
@@ -342,7 +339,6 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				0EA2114E2AF7630F00F7005F /* MaterialCommunityIcons.ttf in Resources */,
 				0EA211572AF7630F00F7005F /* FontAwesome6_Solid.ttf in Resources */,
-				0E85DE0F2AFE9F35000813EB /* GoogleService-Info.plist in Resources */,
 				0EA2114B2AF7630F00F7005F /* FontAwesome6_Regular.ttf in Resources */,
 				0EA2115A2AF7630F00F7005F /* MaterialIcons.ttf in Resources */,
 				A66882256FFB45C2B607056C /* Kanit.ttf in Resources */,
