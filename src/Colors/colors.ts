@@ -16,8 +16,7 @@ const common: Record<string, string> = {
   PRIMARY: YELLOW,
   SUCCESS: EMERALD,
   ERROR: RED,
-  SEARCHBARCONTAINER: LIGHTGRY,
-  LAUNCHSCREEN: YELLOW,
+  TEXTINPUT: SILVER,
 };
 
 type Colors = {
@@ -29,7 +28,7 @@ const colors: Colors = {
   light: {
     ...common,
     BACKGROUND: WHITE,
-    TEXT: WHITE,
+    TEXT: BLACK,
     TEXT_SECONDARY: ASBESTOS,
     SEARCHBAR: BLACK,
     STATUSBAR: DARKCONTENT,
@@ -38,7 +37,7 @@ const colors: Colors = {
   dark: {
     ...common,
     BACKGROUND: BLACK,
-    TEXT: BLACK,
+    TEXT: WHITE,
     TEXT_SECONDARY: SILVER,
     SEARCHBAR: WHITE,
     STATUSBAR: LIGHTCONTENT,

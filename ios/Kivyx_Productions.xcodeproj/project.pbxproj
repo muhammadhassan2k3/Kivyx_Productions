@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* Kivyx_ProductionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Kivyx_ProductionsTests.m */; };
+		0E967AE82B07B570002B82E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E967AE72B07B56F002B82E9 /* GoogleService-Info.plist */; };
 		0EA211482AF7630F00F7005F /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA211352AF7630F00F7005F /* Fontisto.ttf */; };
 		0EA211492AF7630F00F7005F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA211362AF7630F00F7005F /* Octicons.ttf */; };
 		0EA2114A2AF7630F00F7005F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA211372AF7630F00F7005F /* Feather.ttf */; };
@@ -50,6 +51,7 @@
 		00E356EE1AD99517003FC87E /* Kivyx_ProductionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kivyx_ProductionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* Kivyx_ProductionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kivyx_ProductionsTests.m; sourceTree = "<group>"; };
+		0E967AE72B07B56F002B82E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0EA211352AF7630F00F7005F /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		0EA211362AF7630F00F7005F /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		0EA211372AF7630F00F7005F /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0E967AE72B07B56F002B82E9 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* Kivyx_Productions */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* Kivyx_ProductionsTests */,
@@ -339,6 +342,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				0EA2114E2AF7630F00F7005F /* MaterialCommunityIcons.ttf in Resources */,
 				0EA211572AF7630F00F7005F /* FontAwesome6_Solid.ttf in Resources */,
+				0E967AE82B07B570002B82E9 /* GoogleService-Info.plist in Resources */,
 				0EA2114B2AF7630F00F7005F /* FontAwesome6_Regular.ttf in Resources */,
 				0EA2115A2AF7630F00F7005F /* MaterialIcons.ttf in Resources */,
 				A66882256FFB45C2B607056C /* Kanit.ttf in Resources */,
@@ -721,7 +725,8 @@
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					" ",
+					"-Wl",
+					"-ld_classic",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
@@ -802,7 +807,8 @@
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					" ",
+					"-Wl",
+					"-ld_classic",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "878354129396",
+    "project_id": "kivyx-productions-39366",
+    "storage_bucket": "kivyx-productions-39366.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878354129396:android:bbb165dec764366257d9a1",
+        "android_client_info": {
+          "package_name": "com.kivyx_productions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARFRLrlUnMPWxf_RadU3AzyGmJxqJK_lA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
