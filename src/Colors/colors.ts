@@ -11,12 +11,14 @@ const LIGHTGRY = '#ffFFFF26';
 const LIGHTCONTENT = 'light-content';
 const DARKCONTENT = 'dark-content';
 const DARK = '#101418';
+const BLUE = '#3897f1'
 
 const common: Record<string, string> = {
   PRIMARY: YELLOW,
   SUCCESS: EMERALD,
   ERROR: RED,
-  TEXTINPUT: SILVER,
+  TEXTINPUTCONTAINER: SILVER,
+  BLUEBUTTON: BLUE,
 };
 
 type Colors = {
@@ -29,19 +31,15 @@ const colors: Colors = {
     ...common,
     BACKGROUND: WHITE,
     TEXT: BLACK,
-    TEXT_SECONDARY: ASBESTOS,
-    SEARCHBAR: BLACK,
-    STATUSBAR: DARKCONTENT,
     THEME: WHITE,
+    TEXTINPUTCONTAINER: SILVER
   },
   dark: {
     ...common,
     BACKGROUND: BLACK,
     TEXT: WHITE,
-    TEXT_SECONDARY: SILVER,
-    SEARCHBAR: WHITE,
-    STATUSBAR: LIGHTCONTENT,
     THEME: DARK,
+    TEXTINPUTCONTAINER: WHITE,
   },
 };
 

@@ -1,11 +1,12 @@
 import {StyleSheet, Dimensions} from 'react-native';
+import { Theme } from '../../../Theming/themeProvider';
 
 const SCREEN_WIDTH = Dimensions.get('screen').width;
 
-const styles = StyleSheet.create({
+const styles = (theme: Theme) => StyleSheet.create({
   containerView: {
     flex: 1,
-    backgroundColor: '#FAFAFA',
+    backgroundColor: theme.colors.BACKGROUND,
   },
   topContainer: {
     width: SCREEN_WIDTH,
@@ -13,10 +14,9 @@ const styles = StyleSheet.create({
   },
   loginScreenContainer: {
     flex: 1,
-    backgroundColor: 'transparent',
   },
   welcomeText: {
-    color: 'black',
+    color: theme.colors.TEXT,
     fontSize: 45,
     fontWeight: '900',
     marginTop: 70,
@@ -29,22 +29,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  loginFormTextInput: {
-    color: '#000',
+  TextInputContiner: {
     height: 60,
     width: 300,
     fontSize: 18,
     borderRadius: 20,
-    borderWidth: 1,
-    borderColor: '#EAEAEA',
-    backgroundColor: '#bdc3c7',
-    padding: 20,
+    backgroundColor: theme.colors.TEXTINPUTCONTAINER,
+    padding: 17,
     marginTop: 5,
     marginBottom: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   },
   loginError: {
-    color: 'red',
-    textAlign: 'left'
+    color: theme.colors.ERROR,
+    textAlign: 'left',
   },
   signinButtonContainer: {
     justifyContent: 'space-between',
@@ -55,19 +54,20 @@ const styles = StyleSheet.create({
   },
   signinText: {
     fontWeight: '900',
-    color: '#000',
+    color: theme.colors.TEXT,
     fontSize: 30,
   },
   upperSignupText: {
     fontSize: 18,
     marginTop: 15,
+    color: theme.colors.TEXT,
   },
   signupText: {
-    color: '#3897f1',
+    color: theme.colors.BLUEBUTTON,
     fontWeight: '600',
   },
   forgotPasswrodText: {
-    color: '#3897f1',
+    color: theme.colors.BLUEBUTTON,
     fontWeight: '600',
     fontSize: 20,
     marginTop: 10,

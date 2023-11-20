@@ -32,9 +32,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#EAEAEA',
     backgroundColor: '#bdc3c7',
-    padding: 20,
+    padding: 17,
     marginTop: 5,
     marginBottom: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   signinButtonContainer: {
     flexDirection: 'row',

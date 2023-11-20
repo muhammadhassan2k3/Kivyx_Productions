@@ -9,7 +9,7 @@ export type AuthContextType = {
   loginError: any;
   setLoginError: React.Dispatch<React.SetStateAction<any>>;
   login: (credentials: {email: string; password: string}) => Promise<void>;
-  register: (credentials: {email: string; password: string}) => Promise<void>;
+  signUp: (credentials: {email: string; password: string}) => Promise<void>;
   logout: () => Promise<void>;
   resetPassword: (email: string) => Promise<void>;
 }
@@ -53,7 +53,7 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
           }
         },
 
-        register: async ({email, password}) => {
+        signUp: async ({email, password}) => {
           try {
             await auth().createUserWithEmailAndPassword(email, password);
           } catch (e: any) {
@@ -64,7 +64,7 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
               console.log(e);
               setSignupError('This email Already Exist');
             }
-            console.log(e);
+            console.log("signUp function ",e);
           }
         },
 
@@ -72,7 +72,7 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
           try {
             await auth().signOut();
           } catch (e) {
-            console.error(e);
+            console.log("logout function ",e);
           }
         },
 
@@ -80,9 +80,10 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
           try {
             await auth().sendPasswordResetEmail(email);
           } catch (e) {
-            console.error(e);
+            console.log("resetPassword function ",e);
           }
         },
+
       }}>  
       {children}
     </AuthContext.Provider>

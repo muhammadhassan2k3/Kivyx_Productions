@@ -15,6 +15,8 @@ import {useNavigation} from '@react-navigation/native';
 
 const SignUpScreen = () => {
   const [email, setEmail] = useState('');
+  const [isValidEmail, setIsValidEmail] = useState(true);
+
   const navigation = useNavigation();
 
   const authContext = useContext(AuthContext);
@@ -23,16 +25,26 @@ const SignUpScreen = () => {
     return <Text>Error: AuthContext is not defined</Text>;
   }
 
-  const {resetPassword} = authContext;
+  const validateEmail = (email: any) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+
+  const {resetPassword } = authContext;
 
   const handleResetPassword = async () => {
+    if (!validateEmail(email)) {
+      setIsValidEmail(false);
+      Alert.alert('Invalid Email', 'Please enter a valid email address.');
+      return;
+    }
+
     try {
       await resetPassword(email);
-      Alert.alert('Success', 'Password Reset Email sent successfully', [
-        {text: 'OK', onPress: () => navigation.navigate('Login' as never)},
-      ]);
+      Alert.alert('Success', 'Password Reset Email sent successfully')
     } catch (err) {
-      console.error(err);
+      console.log(err);
     }
   };
 
@@ -47,12 +59,19 @@ const SignUpScreen = () => {
             <TextInput
               value={email}
               placeholder="Enter your Email"
-              onChangeText={userEmail => setEmail(userEmail)}
+              onChangeText={userEmail => {
+                setEmail(userEmail);
+                setIsValidEmail(true); // Reset the validation flag on input change
+              }}
               keyboardType="email-address"
               autoCorrect={false}
+              autoCapitalize="none"
               placeholderTextColor="#000"
               style={styles.signupFormTextInput}
             />
+            {!isValidEmail && (
+              <Text style={styles.invalidEmail}>Invalid Email Address.</Text>
+              )}
             <View style={styles.signinButtonContainer}>
               <Text style={styles.signupText}>Submit</Text>
               <FontAwesome5

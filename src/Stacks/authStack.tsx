@@ -11,10 +11,17 @@ const AuthStack = () => {
       initialRouteName="Login"
       screenOptions={{
         headerShown: false
-      }}>
+      }}
+      >
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Signup" component={SignUpScreen} />
-      <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
+      <Stack.Screen name="ForgotPassword" component={ForgotPassword} options={{
+        title:'ForgotPassword',
+        headerStyle:{
+          backgroundColor:"#3897f1",
+        },
+      }}
+      />
     </Stack.Navigator>
   );
 }

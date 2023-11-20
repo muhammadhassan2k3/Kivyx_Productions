@@ -31,6 +31,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#bdc3c7',
     padding: 20,
   },
+  invalidEmail:{
+    color: 'red',
+    marginTop: 10,
+  },
   signinButtonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
