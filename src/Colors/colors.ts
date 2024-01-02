@@ -31,14 +31,12 @@ const colors: Colors = {
     ...common,
     BACKGROUND: WHITE,
     TEXT: BLACK,
-    THEME: WHITE,
     TEXTINPUTCONTAINER: SILVER
   },
   dark: {
     ...common,
     BACKGROUND: BLACK,
     TEXT: WHITE,
-    THEME: DARK,
     TEXTINPUTCONTAINER: WHITE,
   },
 };

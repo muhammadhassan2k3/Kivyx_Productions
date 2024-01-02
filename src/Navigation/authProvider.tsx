@@ -1,5 +1,6 @@
 import React, {createContext, useState, ReactNode} from 'react';
 import auth from '@react-native-firebase/auth';
+import { Alert } from 'react-native';
 
 export type AuthContextType = {
   user: any;
@@ -37,21 +38,27 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
         signupError,
         setSignupError,
 
-        login: async ({email, password}) => {
+        login: async ({ email, password }) => {
           try {
             await auth().signInWithEmailAndPassword(email, password);
             console.log('email:', email);
           } catch (e: any) {
-            if (e.message.includes('INVALID_LOGIN_CREDENTIALS')) {
-              console.log(e);
-              setLoginError("Email and password Doesn't match");
-            } else if (e.message.includes('auth/invalid-email')) {
-              console.log(e);
-              setLoginError('This email Already Exist');
-            }
             console.log(e);
+            if (e.code === 'auth/invalid-email') {
+              console.log(e);
+              setLoginError('Invalid email format');
+            } else if (e.code === 'auth/user-not-found') {
+              console.log(e);
+              setLoginError('User not found. Please check your credentials.');
+            } else if (e.code === 'auth/wrong-password') {
+              console.log(e);
+              setLoginError('Incorrect password. Please try again.');
+            } else {
+              console.log(e);
+              setLoginError('Incorrect password. Please try again.');
+            }
           }
-        },
+        },        
 
         signUp: async ({email, password}) => {
           try {
@@ -61,7 +68,7 @@ export const AuthProvider = ({children}: AuthProviderProps) => {
               console.log(e);
               setSignupError('Password should be at least 6 characters long');
             } else if (e.message.includes('auth/email-already-in-use')) {
-              console.log(e);
+              Alert.alert('Email Already Exist', 'The provided email is already registered. Please use a different email.');
               setSignupError('This email Already Exist');
             }
             console.log("signUp function ",e);

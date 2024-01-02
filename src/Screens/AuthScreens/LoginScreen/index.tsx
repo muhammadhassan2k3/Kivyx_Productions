@@ -50,8 +50,8 @@ const  LoginScreen = () => {
       Alert.alert('Invalid Email', 'Please enter a valid email address.');
       return;
     }
-    try
-    {
+
+    try {
     login({email, password});
     console.log('clicked');
     } catch (e) {
